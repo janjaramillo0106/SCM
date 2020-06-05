@@ -28,9 +28,9 @@ pipeline {
         stage('Etapa 4') {
             steps {
                 slackSend botUser: true, 
-  channel: '@jenkins', 
+  channel: '#jenkinsemail', 
   color: '#00ff00', 
-  message: 'Testing Jekins with Slack', 
+  message: 'prueba', 
   tokenCredentialId: 'slack-token'
             }
         }   
