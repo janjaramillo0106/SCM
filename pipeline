@@ -30,7 +30,7 @@ pipeline {
                 slackSend botUser: true, 
   channel: '#jenkinsemail', 
   color: '#00ff00', 
-  message: 'prueba', 
+  message: 'envio notificación de ejecución app', 
   tokenCredentialId: 'slack-token'
   bat 'java -jar bank/target/bank-0.0.1-SNAPSHOT.jar'
             }
